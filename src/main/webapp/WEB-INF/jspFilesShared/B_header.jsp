@@ -11,7 +11,7 @@
 <body>
     <header>
 
-        <!--//notre code-->
+        <!--//notre code pour plus tard-->
         <p>coucou</p>
 
 
