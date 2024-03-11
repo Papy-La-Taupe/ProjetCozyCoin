@@ -1,4 +1,4 @@
-package com.example.projetencheres;
+package fr.eni.cozycoin.view;
 
 import java.io.*;
 
