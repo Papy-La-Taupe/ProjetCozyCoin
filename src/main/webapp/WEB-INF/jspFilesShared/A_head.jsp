@@ -13,7 +13,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/A_BaseStyle.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/B_Header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/C_Main.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/D_Footer.css">
     <!--  On fini head avec le titre dans chaque page  -->
 
 
