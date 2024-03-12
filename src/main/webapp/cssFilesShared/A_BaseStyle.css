@@ -10,6 +10,39 @@ body{
     height:100vh;
 }
 
+header{
+    height:4vh;
+    font-size:2vh;
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+}
+
+#Nav_Ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+}
+
+#Nav_Image{
+    height: 4vh;
+}
+
+
 main{
     flex-grow: 1;
+}
+
+footer{
+    height:4vh;
+    font-size:2vh;
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
 }

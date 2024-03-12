@@ -1,13 +1,3 @@
-footer{
-    height:4vh;
-    font-size:2vh;
-    font-weight: bolder;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:2vw;
-}
-
 .logoDev{
     height:2vh;
 }
