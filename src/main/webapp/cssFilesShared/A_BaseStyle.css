@@ -1,3 +1,7 @@
+/******************************
+ *****     BASE STYLE     *****
+ ******************************/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +14,16 @@ body{
     height:100vh;
 }
 
+main{
+    flex-grow: 1;
+}
+
+/**************************
+ *****     HEADER     *****
+ **************************/
+
 header{
-    height:4vh;
+    height:6vh;
     font-size:2vh;
     font-weight: bolder;
     display:flex;
@@ -21,28 +33,51 @@ header{
 }
 
 #Nav_Ul{
+    border:1px solid black;
+    width:100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap:2vw;
-}
+    }
 
 #Nav_Image{
     height: 4vh;
+    margin: 1vh auto 1vh 1vh;
+
 }
 
-
-main{
-    flex-grow: 1;
+.nav_Li{
+    list-style: none;
 }
+.nav_Button{
+    padding:1vh;
+    color: cornflowerblue;
+    font-size:2vh;
+    border:1px solid black;
+    border-radius: 2vh;
+}
+
+/************************
+ *****     MAIN     *****
+ ************************/
+
+
+/**************************
+ *****     FOOTER     *****
+ **************************/
 
 footer{
-    height:4vh;
+    height:6vh;
     font-size:2vh;
     font-weight: bolder;
     display:flex;
     align-items: center;
     justify-content: center;
     gap:2vw;
+}
+
+.logoDev{
+    height:4vh;
 }
