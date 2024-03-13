@@ -7,6 +7,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-src/main/java/fr/eni/cozycoin/dal/ConnectionProvider.java
-src/main/webapp/META-INF/context.xml
-src/main/webapp/WEB-INF/lib
+/src/main/java/fr/eni/cozycoin/dal/ConnectionProvider.java
+/src/main/webapp/META-INF/context.xml
+/src/main/webapp/WEB-INF/lib
