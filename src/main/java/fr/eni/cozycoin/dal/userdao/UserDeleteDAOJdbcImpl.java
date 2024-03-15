@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class UserDeleteDAOJdbcImpl implements UserDeleteDAO{
     private static final String DELETE = "DELETE FROM utilisateurs WHERE no_utilisateur=?;";
-
+    @Override
     public void deleteUser(int no_utilisateur){
         if(no_utilisateur == 0){
             //prévoir exception

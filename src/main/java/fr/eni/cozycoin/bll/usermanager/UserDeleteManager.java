@@ -4,7 +4,7 @@ import fr.eni.cozycoin.dal.DAOUserFactory;
 import fr.eni.cozycoin.dal.userdao.UserDeleteDAO;
 
 public class UserDeleteManager {
-    private UserDeleteDAO userDeleteDAO;
+    private final UserDeleteDAO userDeleteDAO;
     public UserDeleteManager(){
         this.userDeleteDAO = DAOUserFactory.userDeleteDAO();
     }
