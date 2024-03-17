@@ -33,7 +33,6 @@ header{
 }
 
 #Nav_Ul{
-    border:1px solid black;
     width:100vw;
     display: flex;
     flex-direction: row;
@@ -42,10 +41,12 @@ header{
     gap:2vw;
     }
 
+#Nav_Image_container{
+    margin: 1vh auto 1vh 1vh;
+}
+
 #Nav_Image{
     height: 4vh;
-    margin: 1vh auto 1vh 1vh;
-
 }
 
 .nav_Li{

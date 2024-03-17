@@ -4,5 +4,7 @@
 
 
     <!--notre main-->
-<a href="hello-servlet">Hello Servlet</a>
+Le pitit main
+<a href="connexion-servlet">test</a>
+
 <%@include file="WEB-INF/jspFilesShared/D_footer.jsp"%>
