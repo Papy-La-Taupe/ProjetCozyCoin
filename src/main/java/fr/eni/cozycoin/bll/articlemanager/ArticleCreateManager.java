@@ -13,7 +13,7 @@ public class ArticleCreateManager {
         this.articleCreateDAO = DAOArticleFactory.articleCreateDAO();
     }
 
-    public void CreateArticle(String nom, String description, Date debut, Date fin, int prixInitial, User user){
-        this.articleCreateDAO.createArticle(nom, description, debut, fin, prixInitial, user);
+    public void CreateArticle(String nom, String description, Date debut, Date fin, int prixInitial, User user, int categorie){
+        this.articleCreateDAO.createArticle(nom, description, debut, fin, prixInitial, user, categorie);
     }
 }

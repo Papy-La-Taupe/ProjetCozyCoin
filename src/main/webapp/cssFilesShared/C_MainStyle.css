@@ -1,0 +1,33 @@
+/************************
+ *****     MAIN     *****
+ ************************/
+.form {
+    height:60dvh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connexionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connexionForm>h2{
+    border:1px black solid;
+    height:5dvh;
+    width:70%;
+    padding:1dvh;
+
+    text-align: center;
+}
+.connexionContainer{
+    border:1px black solid;
+    padding: 3dvh 4dvh 2dvh 4dvh;
+    height:10dvh;
+    width: 70%;
+    margin:2dvh;
+}
