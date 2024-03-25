@@ -13,15 +13,21 @@
     <form class="connexionForm" action="connexion" method="POST">
         <h2>Rejoindre votre espace</h2>
         <div class="connexionContainer">
-            <label>Identifiant : <input type="text" title="Veuillez saisir votre adresse email ou votre pseudonyme"></label>
+            <label>Identifiant : <input type="text" name="identifiant" title="Veuillez saisir votre adresse email ou votre pseudonyme"></label>
         </div>
         <div class="connexionContainer">
-            <label>Mot de Passe : <input type="password" title="Veuillez saisir votre mot de passe"></label>
+            <label>Mot de Passe : <input type="password" name="motDePasse" title="Veuillez saisir votre mot de passe"></label>
         </div>
         <div class="buttonBox">
             <label>Se souvenir de moi : <input type="checkbox" ></label>
             <a href="#">Mot de passe perdu ?</a>
             <button>Se connecter</button>
+            <%
+                String error = (String) request.getAttribute("error");
+                if (error != null && error.equals("error")){
+            %>
+                <p><em>ce mix identifiant/mot de passe ne fonctionne pas</em></p>
+            <% } %>
         </div>
     </form>
     <div class="creationCompte">
