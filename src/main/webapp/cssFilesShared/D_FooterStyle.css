@@ -3,6 +3,9 @@
  **************************/
 
 footer{
+    display:none;
+}
+    /*
     height:6vh;
     font-size:2vh;
     font-weight: bolder;
@@ -15,3 +18,4 @@ footer{
 .logoDev{
     height:4vh;
 }
+     */

@@ -13,13 +13,6 @@
     <form action="connexion" method="POST">
         <h2>Rejoindre votre espace</h2>
         <div>
-            <label>Identifiant : <input type="text" name="identifiant" title="Veuillez saisir votre adresse email ou votre pseudonyme"></label>
-        </div>
-        <div>
-            <label>Mot de Passe : <input type="password" name="motDePasse" title="Veuillez saisir votre mot de passe"></label>
-        </div>
-        <button>Se connecter</button>
-        <div>
             <%
                 String error = (String) request.getAttribute("error");
                 if (error != null && error.equals("error")){
@@ -28,10 +21,20 @@
             <% } %>
         </div>
         <div>
-            <label>Se souvenir de moi : <input type="checkbox" ></label>
-            <a href="#">Mot de passe perdu ?</a>
+            <label>Identifiant : <input type="text" name="identifiant" placeholder="Identifiant" title="Veuillez saisir votre adresse email ou votre pseudonyme"></label>
         </div>
         <div>
+            <label>Mot de Passe : <input type="password" name="motDePasse" placeholder="Mot de passe" title="Veuillez saisir votre mot de passe"></label>
+        </div>
+        <button>Se connecter</button>
+
+        <div id="RememberMe">
+            <label for="RememberMe_CheckBox">Se souvenir de moi : </label>
+            <input type="checkbox" id="RememberMe_CheckBox">
+            <p>|</p>
+            <a href="#">Mot de passe perdu ?</a>
+        </div>
+        <div id="CreateAccount">
             <a href="#">Devenir membre</a>
         </div>
     </form>

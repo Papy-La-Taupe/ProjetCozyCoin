@@ -6,20 +6,113 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px red;
+    border:none;
+    width:40vw;
+    border-radius: 3dvh;
+    background: rgba(245,245,245,0.5);
+    box-shadow: 1dvh 1dvh 4dvh 1dvh rgba(225,225,225,0.4);
+    padding: 3dvh;
+    gap:1.5dvh;
 }
 
-form>h2{
-    border:1px black solid;
-    height:5dvh;
-    width:70%;
-    padding:1dvh;
-    text-align: center;
-}
+form>h2,
 form>div{
-    border:1px black solid;
-    padding: 3dvh 4dvh 2dvh 4dvh;
-    height:10dvh;
-    width: 70%;
-    margin:2dvh;
+    color:#493c56;
+    height:max(6dvh, fit-content);
+    width:60%;
+    padding:1dvh 0;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+form>h2{
+    font-size: 4dvh;
+}
+form[action="connexion"]>div:first-of-type{
+    height:max(4dvh, fit-content);
+    color: #3f1d1f;
+    font-weight: bolder;
+
+    overflow-wrap: break-word;
+
+}
+form[action="connexion"]>div>label{
+    font-size: 0;
+}
+form[action="connexion"]>div>label>input{
+    color: #493c56;
+    padding: 1dvh 2dvh;
+    font-size:2dvh;
+    font-weight: bolder;
+    height:4dvh;
+    width:100%;
+    background: rgba(245,245,245,0.5);
+    border-radius: 2dvh;
+    border:none;
+    text-decoration: none;
+}
+form[action="connexion"]>div>label>input:focus{
+    background: rgba(230,171,150,0.4);
+    outline:none;
+}
+
+form[action="connexion"]>button{
+    color: #e6ab96;
+    padding: 1dvh 2dvh;
+    font-size:2dvh;
+    font-weight: bolder;
+    height:4dvh;
+    width:60%;
+    background: #493c56;
+    border-radius: 2dvh;
+    border:none;
+    text-decoration: none;
+}
+
+form[action="connexion"]>button:hover{
+    color: #493c56;
+    background: #e6ab96;
+}
+form[action="connexion"]>button:active{
+    box-shadow: 0dvh 0dvh 0.5dvh 0.5dvh rgba(87,50,78,0.7);
+}
+
+form[action="connexion"]>#RememberMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form[action="connexion"]>#RememberMe>label,
+form[action="connexion"]>#RememberMe>p{
+    font-size: 2dvh;
+}
+form[action="connexion"]>#RememberMe>label>input{
+    height:2dvh;
+}
+
+form[action="connexion"]>#CreateAccount{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form[action="connexion"]>#CreateAccount>a{
+    color: #bb516a;
+    padding: 2dvh 2dvh;
+    font-size:2dvh;
+    font-weight: bolder;
+    margin:0;
+    height:6dvh;
+    width: 100%;
+    background: #f9d5a6;
+    border-radius: 4dvh;
+    border:none;
+    text-decoration: none;
+}
+form[action="connexion"]>#CreateAccount>a:hover{
+    color: #f9d5a6;
+    background: #bb516a;
+}
+form[action="connexion"]>#CreateAccount>a:active{
+    box-shadow: 0dvh 0dvh 0.5dvh 0.5dvh rgba(87,50,78,0.7);
 }
