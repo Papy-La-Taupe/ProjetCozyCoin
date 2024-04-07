@@ -9,31 +9,33 @@
 <title>Se connecter</title>
 <%@include file="../jspFilesShared/B_header.jsp"%>
 
-<div class="form">
-    <form class="connexionForm" action="connexion" method="POST">
+
+    <form action="connexion" method="POST">
         <h2>Rejoindre votre espace</h2>
-        <div class="connexionContainer">
+        <div>
             <label>Identifiant : <input type="text" name="identifiant" title="Veuillez saisir votre adresse email ou votre pseudonyme"></label>
         </div>
-        <div class="connexionContainer">
+        <div>
             <label>Mot de Passe : <input type="password" name="motDePasse" title="Veuillez saisir votre mot de passe"></label>
         </div>
-        <div class="buttonBox">
-            <label>Se souvenir de moi : <input type="checkbox" ></label>
-            <a href="#">Mot de passe perdu ?</a>
-            <button>Se connecter</button>
+        <button>Se connecter</button>
+        <div>
             <%
                 String error = (String) request.getAttribute("error");
                 if (error != null && error.equals("error")){
             %>
-                <p><em>ce mix identifiant/mot de passe ne fonctionne pas</em></p>
+            <p><em>ce mix identifiant/mot de passe ne fonctionne pas</em></p>
             <% } %>
         </div>
+        <div>
+            <label>Se souvenir de moi : <input type="checkbox" ></label>
+            <a href="#">Mot de passe perdu ?</a>
+        </div>
+        <div>
+            <a href="#">Devenir membre</a>
+        </div>
     </form>
-    <div class="creationCompte">
-        <a href="#">Devenir membre</a>
-    </div>
-</div>
+
 
 
 <%@include file="../jspFilesShared/D_footer.jsp"%>

@@ -1,30 +1,22 @@
 /************************
  *****     MAIN     *****
  ************************/
-.form {
-    height:60dvh;
-    border: 1px solid black;
+
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    border: solid 1px red;
 }
 
-.connexionForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.connexionForm>h2{
+form>h2{
     border:1px black solid;
     height:5dvh;
     width:70%;
     padding:1dvh;
-
     text-align: center;
 }
-.connexionContainer{
+form>div{
     border:1px black solid;
     padding: 3dvh 4dvh 2dvh 4dvh;
     height:10dvh;
