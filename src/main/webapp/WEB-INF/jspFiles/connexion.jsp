@@ -9,7 +9,7 @@
 <title>Se connecter</title>
 <%@include file="../jspFilesShared/B_header.jsp"%>
 
-
+  <div id="SuperCard">
     <form action="connexion" method="POST">
         <h2>Rejoindre votre espace</h2>
         <div>
@@ -38,7 +38,7 @@
             <a href="#">Devenir membre</a>
         </div>
     </form>
-
+  </div>
 
 
 <%@include file="../jspFilesShared/D_footer.jsp"%>
