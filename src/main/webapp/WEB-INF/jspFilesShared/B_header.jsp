@@ -11,6 +11,14 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/D_FooterStyle.css">
 </head>
 <body>
+    <!-- Va servir a auto-rediriger vers la page de connexion si pas connecté. -->
+    <%
+        String requestURI = request.getRequestURI();
+        if (session.getAttribute("user.pseudo") == null && !requestURI.endsWith("/WEB-INF/jspFiles/connexion.jsp")) {
+            response.sendRedirect("connexion");
+            return;
+        }
+    %>
     <header>
 
         <nav>

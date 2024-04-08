@@ -2,7 +2,6 @@
     <title>Accueil Encheres</title>
 <%@include file="WEB-INF/jspFilesShared/B_header.jsp"%>
 
-
     <!--notre main-->
 
 
