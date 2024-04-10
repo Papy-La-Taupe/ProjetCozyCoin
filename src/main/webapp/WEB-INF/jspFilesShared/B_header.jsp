@@ -15,7 +15,9 @@
     <%
         String requestURI = request.getRequestURI();
         User user = (User) session.getAttribute("connectedUser");
-        if (user == null && !requestURI.endsWith("/WEB-INF/jspFiles/connexion.jsp")) {
+        if (user == null
+        && !requestURI.endsWith("connexion.jsp")
+        && !requestURI.endsWith("subscription.jsp")) {
             response.sendRedirect("connexion");
             return;
         }
@@ -25,7 +27,6 @@
         <nav>
             <ul>
                 <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/medias/logo_test_cozycoin.png" alt="Logo du site"></a>
-                <li><a href="connexion" id="Nav_Connexion" class="nav_Button">S'inscrire | Se connecter</a></li>
                 <li><a href="#" id="Nav_Enchères">Encheres</a></li>
                 <li><a href="#" id="Nav_Vendre">Vendre</a></li>
                 <li><a href="#" id="Nav_Profil">Mon profil</a></li>

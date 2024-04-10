@@ -18,9 +18,7 @@ public class ConnexionServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final String identifiant = req.getParameter("identifiant");
-        System.out.println(identifiant);
         final String motDePasse = req.getParameter("motDePasse");
-        System.out.println(motDePasse);
         final UserReadManager manager = new UserReadManager();
         final User user = manager.ReadUser(identifiant);
         System.out.println(user);

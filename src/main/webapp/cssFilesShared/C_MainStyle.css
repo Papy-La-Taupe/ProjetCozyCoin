@@ -41,26 +41,16 @@ form>div{
     text-align: center;
     overflow-wrap: break-word;
 }
+
 form>h2{
     font-size: 4dvh;
 }
 
-/************************************
- *****     FORM : CONNEXION     *****
- ************************************/
-
-form[action="connexion"]>div:first-of-type{
-    height:max(4dvh, fit-content);
-    color: #3f1d1f;
-    font-weight: bolder;
-
-    overflow-wrap: break-word;
-
-}
-form[action="connexion"]>div>label{
+form>div>label{
     font-size: 0;
 }
-form[action="connexion"]>div>label>input{
+
+form>div>label>input{
     color: #493c56;
     padding: 1dvh 2dvh;
     font-size:2dvh;
@@ -72,12 +62,13 @@ form[action="connexion"]>div>label>input{
     border:none;
     text-decoration: none;
 }
-form[action="connexion"]>div>label>input:focus{
+
+form>div>label>input:focus{
     background: rgba(230,171,150,0.4);
     outline:none;
 }
 
-form[action="connexion"]>button{
+form>button{
     color: #e6ab96;
     padding: 1dvh 2dvh;
     font-size:2dvh;
@@ -90,12 +81,25 @@ form[action="connexion"]>button{
     text-decoration: none;
 }
 
-form[action="connexion"]>button:hover{
+form>button:hover{
     color: #493c56;
     background: #e6ab96;
 }
-form[action="connexion"]>button:active{
+
+form>button:active{
     box-shadow: 0dvh 0dvh 0.5dvh 0.5dvh rgba(87,50,78,0.7);
+}
+/************************************
+ *****     FORM : CONNEXION     *****
+ ************************************/
+
+form[action="connexion"]>div:first-of-type{
+    height:max(4dvh, fit-content);
+    color: #3f1d1f;
+    font-weight: bolder;
+
+    overflow-wrap: break-word;
+
 }
 
 form[action="connexion"]>#RememberMe{

@@ -35,7 +35,7 @@
             <a href="#">Mot de passe perdu ?</a>
         </div>
         <div id="CreateAccount">
-            <a href="#">Devenir membre</a>
+            <a href="subscription">Devenir membre</a>
         </div>
     </form>
   </div>
