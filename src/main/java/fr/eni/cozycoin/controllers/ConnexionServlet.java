@@ -21,7 +21,6 @@ public class ConnexionServlet extends HttpServlet {
         final String motDePasse = req.getParameter("motDePasse");
         final UserReadManager manager = new UserReadManager();
         final User user = manager.ReadUser(identifiant);
-        System.out.println(user);
         if(user != null && user.getMotDePasse().equals(motDePasse)){
             HttpSession session = req.getSession();
             session.setAttribute("connectedUser", user);
