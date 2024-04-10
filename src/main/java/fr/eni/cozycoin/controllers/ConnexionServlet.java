@@ -27,8 +27,11 @@ public class ConnexionServlet extends HttpServlet {
         if(user != null && user.getMotDePasse().equals(motDePasse)){
             HttpSession session = req.getSession();
             session.setAttribute("connectedUser", user);
+            req.getRequestDispatcher("/WEB-INF/jspFiles/home.jsp").forward(req, resp);
         }
-        req.setAttribute("error", "error");
-        req.getRequestDispatcher("/WEB-INF/jspFiles/connexion.jsp").forward(req, resp);
+        else{
+            req.setAttribute("error", "error");
+            req.getRequestDispatcher("/WEB-INF/jspFiles/connexion.jsp").forward(req, resp);
+        }
     }
 }

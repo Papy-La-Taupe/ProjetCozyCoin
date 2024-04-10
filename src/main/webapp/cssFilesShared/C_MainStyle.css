@@ -15,6 +15,10 @@
     background:rgba(245,245,245,0.3);
 }
 
+/*************************
+ *****     FORMS     *****
+ *************************/
+
 form{
     display: flex;
     flex-direction: column;
@@ -40,6 +44,11 @@ form>div{
 form>h2{
     font-size: 4dvh;
 }
+
+/************************************
+ *****     FORM : CONNEXION     *****
+ ************************************/
+
 form[action="connexion"]>div:first-of-type{
     height:max(4dvh, fit-content);
     color: #3f1d1f;

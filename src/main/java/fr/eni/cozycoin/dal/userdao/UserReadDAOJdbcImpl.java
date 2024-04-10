@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserReadDAOJdbcImpl implements UserReadDAO{
-    private static final String SELECT = "SELECT pseudo, nom, prenom, email,telephone, rue, code_postal,ville, mot_de_passe FROM utilisateurs WHERE email=? OR pseudo=?;";
+    private static final String SELECT = "SELECT no_utilisateur, pseudo, nom, prenom, email,telephone, rue, code_postal,ville, mot_de_passe FROM utilisateurs WHERE email=? OR pseudo=?;";
 
     @Override
     public User readUser(String identifiant) {

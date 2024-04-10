@@ -1,4 +1,4 @@
-<%--
+<%@ page import="fr.eni.cozycoin.bo.User" %><%--
   Created by IntelliJ IDEA.
   User: papy-la-taupe
   Date: 06/03/2024
@@ -14,7 +14,8 @@
     <!-- Va servir a auto-rediriger vers la page de connexion si pas connecté. -->
     <%
         String requestURI = request.getRequestURI();
-        if (session.getAttribute("user.pseudo") == null && !requestURI.endsWith("/WEB-INF/jspFiles/connexion.jsp")) {
+        User user = (User) session.getAttribute("connectedUser");
+        if (user == null && !requestURI.endsWith("/WEB-INF/jspFiles/connexion.jsp")) {
             response.sendRedirect("connexion");
             return;
         }
