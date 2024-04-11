@@ -5,9 +5,9 @@
 		driverClassName="com.mysql.cj.jdbc.Driver"
 		type="javax.sql.DataSource"
 
-		url="jdbc:mysql://localhost:3306/cozycoindb"
-		username="firande63"
-		password="Ckirinve/63"
+		url="jdbc:mysql://localhost:3306/ENCHERES_ET_EN_OS"
+		username="root"
+		password="Ckirinve_63"
 		
 		maxTotal="100"
 		maxTdle="30"

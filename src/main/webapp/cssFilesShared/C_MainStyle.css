@@ -153,12 +153,16 @@ form[action="profil"]{
 
 form[action="profil"]>div{
     display:flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width:90%;
+}
+
+form[action="profil"]>div>label{
     pointer-events: none;
 }
+
 form[action="profil"]>div>label{
     white-space: nowrap;
     overflow: hidden;
@@ -166,10 +170,20 @@ form[action="profil"]>div>label{
     width:90%;
 }
 
-form[action="profil"]>div>img{
+form[action="profil"]>div>a>img{
     height: 4dvh;
     width:4dvh;
     margin-left: 1.5dvh;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+form[action="profil"]>div>a>img:hover{
+    box-shadow: inset 0 0 1dvh 0.5dvh #493c56;
+}
+
+form[action="profil"]>div>a>img:active{
+    box-shadow: inset 0 0 1dvh 0.5dvh #bb516a;
 }
 
 form[action="profil"]>button{
