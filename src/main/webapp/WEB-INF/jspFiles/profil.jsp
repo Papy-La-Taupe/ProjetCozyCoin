@@ -7,7 +7,6 @@
         <div>
             <a><img id="UpdatePseudo" src="${pageContext.request.contextPath}/medias/update_profile2.png" alt=""></a>
             <label id="PseudoLabel">Pseudo : <input id="PseudoInput" type="text" name="pseudo" value="${connectedUser.pseudo}" readonly title="Votre identifiant sur le site" ></label>
-
         </div>
         <div>
             <a><img id="UpdateNom" src="${pageContext.request.contextPath}/medias/update_profile2.png" alt=""></a>

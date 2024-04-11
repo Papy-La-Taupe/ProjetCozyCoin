@@ -1,5 +1,6 @@
 $(document).ready(() => {
     const updateElements = [
+        { id: 'UpdatePseudo', labelId: 'PseudoLabel', inputId: 'PseudoInput' },
         { id: 'UpdateNom', labelId: 'NomLabel', inputId: 'NomInput' },
         { id: 'UpdatePrenom', labelId: 'PrenomLabel', inputId: 'PrenomInput' },
         { id: 'UpdateEmail', labelId: 'EmailLabel', inputId: 'EmailInput' },

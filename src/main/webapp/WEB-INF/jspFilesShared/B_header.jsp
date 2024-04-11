@@ -33,7 +33,7 @@
                 <li><a href="#" id="Nav_Enchères">Encheres</a></li>
                 <li><a href="#" id="Nav_Vendre">Vendre</a></li>
                 <li><a href="profil" id="Nav_Profil">Mon profil</a></li>
-                <li><a href="#" id="Nav_Deconnexion">Se deconnecter</a></li>
+                <li><a href="logout" id="Nav_Deconnexion">Se deconnecter</a></li>
             </ul>
         </nav>
 
