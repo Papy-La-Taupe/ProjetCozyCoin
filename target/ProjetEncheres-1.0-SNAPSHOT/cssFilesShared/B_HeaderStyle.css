@@ -1,0 +1,56 @@
+/**************************
+ *****     HEADER -     *****
+ **************************/
+
+header{
+    height:6vh;
+    font-size:2vh;
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+}
+
+nav>ul{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2vw;
+}
+
+nav>ul>a{
+    margin: 1dvh auto 1dvh 1dvh;
+}
+
+nav>ul>a>img{
+    position:absolute;
+    top:1dvh;
+    left: 1dvh;
+    height: 6dvh;
+}
+
+nav>ul>li{
+    list-style: none;
+    margin-top: 1dvh;
+}
+nav>ul>li>a{
+    padding:1dvh;
+    color: #493c56;
+    font-size:2vh;
+    background: rgba(245,245,245,0.5);
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+nav>ul>li:last-child{
+    margin-right: 2dvh;
+}
+nav>ul>li>a:hover{
+    color: #a380b7;
+    text-shadow: 0.5dvh 0.5dvh 1dvh #3f1d1f;
+    background: none;
+    box-shadow: none;
+}
