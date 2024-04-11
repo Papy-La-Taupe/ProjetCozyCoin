@@ -1,4 +1,4 @@
-package fr.eni.cozycoin.controllers;
+package fr.eni.cozycoin.controllers.user;
 
 import java.io.*;
 

@@ -1,6 +1,5 @@
-package fr.eni.cozycoin.controllers;
+package fr.eni.cozycoin.controllers.user;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

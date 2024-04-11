@@ -1,7 +1,7 @@
-package fr.eni.cozycoin.controllers;
+package fr.eni.cozycoin.controllers.user;
 
-import fr.eni.cozycoin.bll.usermanager.UserCreateManager;
 import fr.eni.cozycoin.bll.usermanager.UserReadManager;
+import fr.eni.cozycoin.bll.usermanager.UserUpdateManager;
 import fr.eni.cozycoin.bo.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -11,16 +11,18 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
-@WebServlet("/subscription")
-public class subscriptionServlet extends HttpServlet {
+
+@WebServlet("/profil")
+public class ProfilServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jspFiles/subscription.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jspFiles/profil.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         final String pseudo = req.getParameter("pseudo");
         final String nom = req.getParameter("nom");
         final String prenom = req.getParameter("prenom");
@@ -30,12 +32,19 @@ public class subscriptionServlet extends HttpServlet {
         final String codePostal = req.getParameter("codePostal");
         final String ville = req.getParameter("ville");
         final String motDePasse = req.getParameter("motDePasse");
-        final UserCreateManager manager = new UserCreateManager();
-        manager.CreateUser(pseudo,nom,prenom,email,telephone,rue,codePostal,ville,motDePasse);
-        final UserReadManager connexion = new UserReadManager();
-        final User user = connexion.ReadUser(pseudo);
+
         HttpSession session = req.getSession();
-        session.setAttribute("connectedUser", user);
-        req.getRequestDispatcher("/WEB-INF/jspFiles/home.jsp").forward(req, resp);
+        final User connectedUser = (User) session.getAttribute("connectedUser");
+        final String connectedUserEmail = connectedUser.getEmail();
+        final User userUpdater = new User(pseudo,nom,prenom,email,telephone,rue,codePostal,ville,motDePasse);
+
+        final UserUpdateManager manager = new UserUpdateManager();
+        manager.UpdateUser(connectedUserEmail, userUpdater);
+
+        final UserReadManager updateUserManager = new UserReadManager();
+        final User updatedUser = updateUserManager.ReadUser(pseudo);
+
+        session.setAttribute("connectedUser", updatedUser);
+        req.getRequestDispatcher("/WEB-INF/jspFiles/profil.jsp").forward(req, resp);
     }
 }
