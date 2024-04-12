@@ -1,6 +1,6 @@
-<%@include file="../jspFilesShared/A_head.jsp"%>
+<%@include file="../../jspFilesShared/A_head.jsp"%>
 <title>Mon Profil</title>
-<%@include file="../jspFilesShared/B_header.jsp"%>
+<%@include file="../../jspFilesShared/B_header.jsp"%>
 
     <form action="profil" method="POST">
         <h2>Mon profil</h2>
@@ -46,4 +46,4 @@
         </div>
     </form>
 
-<%@include file="../jspFilesShared/D_footer.jsp"%>
+<%@include file="../../jspFilesShared/D_footer.jsp"%>

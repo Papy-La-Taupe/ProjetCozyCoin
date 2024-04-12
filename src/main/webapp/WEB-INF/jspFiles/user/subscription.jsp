@@ -1,6 +1,6 @@
-<%@include file="../jspFilesShared/A_head.jsp"%>
+<%@include file="../../jspFilesShared/A_head.jsp"%>
 <title>Inscription</title>
-<%@include file="../jspFilesShared/B_header.jsp"%>
+<%@include file="../../jspFilesShared/B_header.jsp"%>
 <div id="SuperCard">
     <form action="subscription" method="POST">
         <h2>Rejoignez le mouvement !</h2>
@@ -34,4 +34,4 @@
         <button>Devenir membre</button>
     </form>
 </div>
-<%@include file="../jspFilesShared/D_footer.jsp"%>
+<%@include file="../../jspFilesShared/D_footer.jsp"%>

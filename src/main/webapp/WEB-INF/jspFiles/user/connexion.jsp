@@ -5,9 +5,9 @@
   Time: 18:17
   To change this template use File | Settings | File Templates.
 --%>
-<%@include file="../jspFilesShared/A_head.jsp"%>
+<%@include file="../../jspFilesShared/A_head.jsp"%>
 <title>Se connecter</title>
-<%@include file="../jspFilesShared/B_header.jsp"%>
+<%@include file="../../jspFilesShared/B_header.jsp"%>
 
   <div id="SuperCard">
     <form action="connexion" method="POST">
@@ -41,4 +41,4 @@
   </div>
 
 
-<%@include file="../jspFilesShared/D_footer.jsp"%>
+<%@include file="../../jspFilesShared/D_footer.jsp"%>

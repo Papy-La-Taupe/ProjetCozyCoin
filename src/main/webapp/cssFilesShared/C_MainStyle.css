@@ -43,14 +43,16 @@ form>div{
 }
 
 form>h2{
-    font-size: 4dvh;
+    font-weight:bold;
+    font-size: 3.5dvh;
 }
 
 form>div>label{
     font-size: 0;
 }
 
-form>div>label>input{
+form>div>label>input,
+form>div>label>textarea{
     color: #493c56;
     padding: 1dvh 2dvh;
     font-size:2dvh;
@@ -63,7 +65,14 @@ form>div>label>input{
     text-decoration: none;
 }
 
-form>div>label>input:focus{
+form>div>label>textarea{
+    height:16dvh;
+    overflow-y: auto;
+    resize: none;
+}
+
+form>div>label>input:focus,
+form>div>label>textarea:focus{
     background: rgba(230,171,150,0.4);
     outline:none;
 }
@@ -150,12 +159,12 @@ form[action="profil"]{
     justify-content: space-between;
 }
 
-form[action="profil"]>div{
+form[action="profil"]>div,
+form[action="newSale"]>div[id="Cancel"]{
     display:flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width:90%;
 }
 
 form[action="profil"]>div>label{
@@ -169,7 +178,8 @@ form[action="profil"]>div>label{
     width:90%;
 }
 
-form[action="profil"]>div>a>img{
+form[action="profil"]>div>a>img,
+form[action="newSale"]>div>a>img{
     height: 4dvh;
     width:4dvh;
     margin-left: 1.5dvh;
@@ -177,15 +187,18 @@ form[action="profil"]>div>a>img{
     border-radius:50%;
 }
 
-form[action="profil"]>div>a>img:hover{
+form[action="profil"]>div>a>img:hover,
+form[action="newSale"]>div>a>img:hover{
     box-shadow: inset 0 0 1dvh 0.5dvh #493c56;
 }
 
-form[action="profil"]>div>a>img:active{
+form[action="profil"]>div>a>img:active,
+form[action="newSale"]>div>a>img:active{
     box-shadow: inset 0 0 1dvh 0.5dvh #bb516a;
 }
 
-form[action="profil"]>div>button{
+form[action="profil"]>div>button,
+form[action="newSale"]>div>button{
     color: #e6ab96;
     padding: 1dvh 2dvh;
     font-size:2dvh;
@@ -233,4 +246,17 @@ form[action="delete"]>a:hover{
 
 form[action="delete"]>a:active{
     box-shadow: 0dvh 0dvh 0.5dvh 0.5dvh rgba(87,50,78,0.7);
+}
+
+/*********************************
+ *****     FORM : NEWSALE     *****
+ *********************************/
+
+form[action="newSale"]>div>label[id="debutEnchere"],
+form[action="newSale"]>div>label[id="finEnchere"]{
+    font-size:2dvh;
+}
+
+form[action="newSale"]>div>a>img{
+    transform: rotateX(180deg) rotateY(180deg);
 }

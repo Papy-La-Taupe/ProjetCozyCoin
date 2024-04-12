@@ -15,7 +15,7 @@ import java.io.IOException;
 public class DeleteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jspFiles/delete.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jspFiles/user/delete.jsp").forward(req, resp);
     }
 
     @Override
@@ -27,6 +27,6 @@ public class DeleteServlet extends HttpServlet {
 
         manager.DeleteUser(connectedUserId);
         req.getSession().invalidate();
-        req.getRequestDispatcher("/WEB-INF/jspFiles/connexion.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jspFiles/user/connexion.jsp").forward(req, resp);
     }
 }

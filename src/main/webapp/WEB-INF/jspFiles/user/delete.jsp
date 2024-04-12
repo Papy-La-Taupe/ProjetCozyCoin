@@ -1,6 +1,6 @@
-<%@include file="../jspFilesShared/A_head.jsp"%>
+<%@include file="../../jspFilesShared/A_head.jsp"%>
 <title>Supprimer mon Profil</title>
-<%@include file="../jspFilesShared/B_header.jsp"%>
+<%@include file="../../jspFilesShared/B_header.jsp"%>
 
 <div id="SuperCard">
 
@@ -11,4 +11,4 @@
     </form>
 </div>
 
-<%@include file="../jspFilesShared/D_footer.jsp"%>
+<%@include file="../../jspFilesShared/D_footer.jsp"%>
