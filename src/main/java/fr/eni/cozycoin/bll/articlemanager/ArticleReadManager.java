@@ -9,7 +9,7 @@ public class ArticleReadManager {
         this.articleReadDAO = DAOArticleFactory.articleReadDAO();
     }
 
-    public void ReadArticle(String nom){
-        this.articleReadDAO.readArticle(nom);
+    public void ReadArticle(int id){
+        this.articleReadDAO.readArticle(id);
     }
 }

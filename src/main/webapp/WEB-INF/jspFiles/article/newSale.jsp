@@ -18,7 +18,7 @@
                 <label id="finEnchere">Quand se termineront-elles ?<input type="date" name="dateFinEncheres" placeholder="Date de fin des encheres" title="Date de fin des enchères" required></label>
             </div>
             <div>
-                <label>Prix initial : <input type="number" step="0.01" name="prixInitial" placeholder="Prix initial" title="Prix initial" required></label>
+                <label>Prix initial : <input type="number" step="1" name="prixInitial" placeholder="Prix initial" title="Prix initial" required></label>
             </div>
             <div>
                 <label>Numéro de la catégorie : <input type="number" name="noCategorie" placeholder="Numero de la categorie" title="Numéro de la catégorie" required></label>
