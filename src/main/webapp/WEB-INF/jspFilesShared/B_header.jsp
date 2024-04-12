@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/D_FooterStyle.css">
 
 <script defer src="${pageContext.request.contextPath}/jsFiles/jquery.min.js"></script>
+<script defer src="${pageContext.request.contextPath}/jsFiles/home.js"></script>
 <script defer src="${pageContext.request.contextPath}/jsFiles/profile.js"></script>
 </head>
 <body>
