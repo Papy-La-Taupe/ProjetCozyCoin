@@ -1,3 +1,5 @@
+<%@ page import="fr.eni.cozycoin.bo.Article" %>
+<%@ page import="java.util.List" %>
 <%@include file="../jspFilesShared/A_head.jsp"%>
 <title>Accueil</title>
 <%@include file="../jspFilesShared/B_header.jsp"%>
@@ -29,8 +31,26 @@
         </section>
 </form>
 
-<div>
+<div id="ItemCards">
+
     <h2>here will come the cards</h2>
+
+    <%
+        List<Article> articles = (List<Article>) request.getAttribute("articles");
+        if (articles != null && !articles.isEmpty()) {
+            for (Article article : articles) {
+    %>
+    <div class="article-card">
+        <h2><%= article.getNom() %></h2>
+        <p><%= article.getDescription() %></p>
+    </div>
+    <%
+            }
+        } else {
+            out.println("<p>No articles available.</p>");
+        }
+    %>
+
 </div>
 
 <%@include file="../jspFilesShared/D_footer.jsp"%>

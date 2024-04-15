@@ -101,4 +101,20 @@ public class Article {
     public void setCategorie(int categorie) {
         this.categorie = categorie;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Article{");
+        sb.append("numArticle=").append(numArticle);
+        sb.append(", nom='").append(nom).append('\'');
+        sb.append(", description='").append(description).append('\'');
+        sb.append(", debut=").append(debut);
+        sb.append(", fin=").append(fin);
+        sb.append(", prixInitial=").append(prixInitial);
+        sb.append(", prixVente=").append(prixVente);
+        sb.append(", userId=").append(userId);
+        sb.append(", categorie=").append(categorie);
+        sb.append('}');
+        return sb.toString();
+    }
 }

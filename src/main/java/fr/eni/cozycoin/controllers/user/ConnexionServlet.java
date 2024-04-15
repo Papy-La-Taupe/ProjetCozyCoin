@@ -24,7 +24,7 @@ public class ConnexionServlet extends HttpServlet {
         if(user != null && user.getMotDePasse().equals(motDePasse)){
             HttpSession session = req.getSession();
             session.setAttribute("connectedUser", user);
-            req.getRequestDispatcher("/WEB-INF/jspFiles/home.jsp").forward(req, resp);
+            resp.sendRedirect("home");
         }
         else{
             req.setAttribute("error", "error");

@@ -9,6 +9,9 @@ public class DAOArticleFactory {
     public static ArticleReadDAO articleReadDAO() {
         return new ArticleReadDAOJdbcImpl();
     }
+    public static ArticleFilterReadDAO articleFilterReadDAO() {
+        return new ArticleFilterReadDAOJdbcImpl();
+    }
     public static ArticleUpdateDAO articleUpdateDAO() {
         return new ArticleUpdateDAOJdbcImpl();
     }

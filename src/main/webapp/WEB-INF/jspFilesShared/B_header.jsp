@@ -1,4 +1,6 @@
-<%@ page import="fr.eni.cozycoin.bo.User" %><%--
+<%@ page import="fr.eni.cozycoin.bo.User" %>
+
+<%--
   Created by IntelliJ IDEA.
   User: papy-la-taupe
   Date: 06/03/2024
@@ -15,6 +17,7 @@
 <script defer src="${pageContext.request.contextPath}/jsFiles/profile.js"></script>
 </head>
 <body>
+
     <!-- Va servir a auto-rediriger vers la page de connexion si pas connecté. -->
     <%
         String requestURI = request.getRequestURI();
