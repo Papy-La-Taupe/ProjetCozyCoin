@@ -33,6 +33,16 @@
 
 <div id="ItemCards">
 
+
+
+    <ul>
+        <c:forEach var="item" items="${articles}">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>
+
+
+
     <h2>here will come the cards</h2>
 
     <%
