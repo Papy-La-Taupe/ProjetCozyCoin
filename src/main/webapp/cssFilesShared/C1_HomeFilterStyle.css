@@ -1,0 +1,80 @@
+#ItemCards{
+    margin: 2dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    padding: 2vw ;
+    border:none;
+    width:70vw;
+    height:25vw;
+    border-radius: 3dvh;
+    background: rgba(245,245,245,0.5);
+    box-shadow: 1dvh 1dvh 4dvh 1dvh rgba(225,225,225,0.4);
+    gap:3dvh;
+    overflow-x: auto;
+}
+
+.card{
+    min-width: 15vw;
+    margin-right: 0.5vw;
+    border-radius: 2dvh;
+    border:none;
+    /* Quand image il y aura, faire apparaitre img en bckgrnd avec leger filtre gradient assombrissant */
+    background: #e6ab96;
+    box-shadow: 1dvh 1dvh 4dvh 1dvh rgba(235,235,235,0.6);
+    height:20vw;
+}
+
+.card>h3{
+   text-align: center;
+   font-weight:bold;
+   font-size: 2.5dvh;
+    margin:1dvh;
+}
+
+.card>#Description{
+    background: rgba(255,255,255,0.8);
+    height:5vw;
+    overflow-y: auto;
+    padding:1dvh;
+    margin:0 1dvh;
+    border-radius: 1dvh;
+    font-style: italic;
+}
+
+.card>.date{
+    padding-left: 1dvh;
+    margin:1dvh 0;
+}
+
+.card>.price{
+    text-align: right;
+    padding-right: 1dvh;
+    margin: 1dvh 0;
+}
+
+.card>a{
+    color: #e6ab96;
+    padding: 0.5dvh 2dvh;
+    margin: 1dvh auto;
+    font-size:1.5dvh;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    height:3dvh;
+    width:10vw;
+    background: #493c56;
+    border-radius: 2dvh;
+    text-decoration: none;
+}
+
+.card>a:hover{
+    color: #493c56;
+    background: #e6ab96;
+}
+
+.card>a:active{
+    box-shadow: 0dvh 0dvh 0.5dvh 0.5dvh rgba(87,50,78,0.7);
+}

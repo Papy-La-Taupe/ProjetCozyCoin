@@ -9,7 +9,9 @@
 --%>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/A_BaseStyle.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/B_HeaderStyle.css">
+
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/C_MainStyle.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/C1_HomeFilterStyle.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFilesShared/D_FooterStyle.css">
 
 <script defer src="${pageContext.request.contextPath}/jsFiles/jquery.min.js"></script>

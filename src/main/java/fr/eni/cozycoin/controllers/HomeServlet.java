@@ -1,10 +1,7 @@
 package fr.eni.cozycoin.controllers;
 
 import fr.eni.cozycoin.bll.articlemanager.ArticleReadManager;
-import fr.eni.cozycoin.bll.usermanager.UserReadManager;
 import fr.eni.cozycoin.bo.Article;
-import fr.eni.cozycoin.bo.User;
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

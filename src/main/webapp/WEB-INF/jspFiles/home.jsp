@@ -32,35 +32,19 @@
 </form>
 
 <div id="ItemCards">
-
-
-
-    <ul>
-        <c:forEach var="item" items="${articles}">
-            <li>${item}</li>
-        </c:forEach>
-    </ul>
-
-
-
-    <h2>here will come the cards</h2>
-
-    <%
-        List<Article> articles = (List<Article>) request.getAttribute("articles");
-        if (articles != null && !articles.isEmpty()) {
-            for (Article article : articles) {
-    %>
-    <div class="article-card">
-        <h2><%= article.getNom() %></h2>
-        <p><%= article.getDescription() %></p>
-    </div>
-    <%
-            }
-        } else {
-            out.println("<p>No articles available.</p>");
-        }
-    %>
-
+    <c:forEach var="article" items="${articles}">
+        <div class="card">
+            <h3>${article.nom}</h3>
+            <p id="Description">${article.description}</p>
+            <p class="date">Mise en vente le: </p>
+            <p class="date">${article.debut}</p>
+            <p class="date">Fin des encheres le: </p>
+            <p class="date">${article.fin}</p>
+            <p class="price">Prix initial: ${article.prixInitial}</p>
+            <p class="price">Encheres actuelles: ${article.prixVente}</p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+    </c:forEach>
 </div>
 
 <%@include file="../jspFilesShared/D_footer.jsp"%>

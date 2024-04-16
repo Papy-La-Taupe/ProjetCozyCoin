@@ -282,12 +282,12 @@ form[action="home"]>section{
 }
 
 form[action="home"]>section[id="specialFilter"]{
-    border: green 2px solid;
+    border: none;
     flex-grow: 2;
 }
 
 form[action="home"]>section[id="generalFilter"]{
-    border: red 2px solid;
+    border: none;
     flex-grow: 1;
 }
 
@@ -298,7 +298,7 @@ form[action="home"]>section>div{
     justify-content: space-between;
     width:45%;
     height:90%;
-    border: aqua 2px solid;
+    border: none;
 }
 
 form[action="home"]>section>div[id="generalFilterId"]{
